@@ -70,20 +70,132 @@ h6 {
   isolation: isolate;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
 
 :root {
+  --clr-bg: #e0e8ff;
+  --clr-accent: hsl(245, 75%, 52%);
+  --clr-bg2: #f5f7ff;
+  --clr-text: hsl(224, 23%, 55%);
+  --clr-dark-blue: hsl(223, 47%, 23%);
 
---clr-bg: hsl(225, 100%, 94%)
---clr-accent: hsl(245, 75%, 52%)
---clr-bg2: hsl(225, 100%, 98%)
---clr-text: hsl(224, 23%, 55%)
---clr-dark-blue: hsl(223, 47%, 23%)
+  /* font-sizes */
+  --fs-regular: 1rem;
 
+  /* font-family */
+  --ff-main: "Red Hat Display", sans-serif;
 
-/* font-sizes */
---fs-regular: 1rem;
-
-/* font-family */
---ff-main:  'Red Hat Display', sans-serif;
+  /* utilities */
+  --opacity-hover: 0.7;
 }
+
+body {
+  color: var(--clr-text);
+  font-size: var(--fs-regular);
+  font-family: var(--ff-main);
+  text-align: center;
+  background-color: var(--clr-bg);
+  line-height: 1.6;
+}
+
+.container {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  background: url(images/pattern-background-desktop.svg) repeat-x;
+}
+
+@media (max-width: 500px) {
+  .container {
+    background: url(images/pattern-background-mobile.svg) repeat-x;
+  }
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+a:link,
+a:visited {
+  color: var(--clr-accent);
+  text-align: center;
+}
+
+.card {
+  max-width: 350px;
+  background-color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 1.5rem;
+  box-shadow: 0 5px 15px;
+}
+
+.img-container {
+  background: url(images/illustration-hero.svg) no-repeat center center/ cover;
+  height: 150px;
+  max-width: 100%;
+}
+
+.card__content {
+  padding: 1.75em;
+  display: grid;
+  gap: 1.25rem;
+}
+
+.card__heading {
+  color: var(--clr-dark-blue);
+}
+
+.plan-box {
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.logo {
+  height: 50px;
+}
+
+.plan {
+  color: var(--clr-dark-blue);
+  font-weight: 800;
+  font-size: 0.9375rem;
+  padding-bottom: 0.1em;
+}
+
+.plan-link {
+  font-weight: 600;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 0.75em;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.payment {
+  background-color: var(--clr-accent);
+  color: #fff;
+  font-weight: 700;
+}
+
+.cancel {
+  color: inherit;
+  font-weight: 700;
+  background: none;
+}
+
+/* @media (max-width: 600px) {
+  .card__paragraph {
+    max-width: 95%;
+  }
+} */
