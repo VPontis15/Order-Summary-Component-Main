@@ -205,6 +205,11 @@ a:visited {
   font-weight: 700;
 }
 
+.payment:focus-visible,
+.cancel:focus-visible {
+  outline: 3px solid var(--clr-dark-blue);
+}
+
 @media (max-width: 25em) {
   .container {
     background: url(images/pattern-background-mobile.svg) repeat-x;
