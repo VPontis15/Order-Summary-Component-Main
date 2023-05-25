@@ -118,6 +118,10 @@ a:visited {
   text-align: center;
 }
 
+ul li {
+  list-style: none;
+}
+
 .card {
   max-width: 23.75rem;
   background-color: #fff;
