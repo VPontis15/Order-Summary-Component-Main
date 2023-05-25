@@ -105,12 +105,6 @@ body {
   background: url(images/pattern-background-desktop.svg) repeat-x;
 }
 
-@media (max-width: 376px) {
-  .container {
-    background: url(images/pattern-background-mobile.svg) repeat-x;
-  }
-}
-
 .flex {
   display: flex;
   align-items: center;
@@ -125,7 +119,7 @@ a:visited {
 }
 
 .card {
-  max-width: 350px;
+  max-width: 380px;
   background-color: #fff;
   border-radius: 20px;
   overflow: hidden;
@@ -135,24 +129,27 @@ a:visited {
 
 .img-container {
   background: url(images/illustration-hero.svg) no-repeat center center/ cover;
-  height: 200px;
+  height: 170px;
   max-width: 100%;
 }
 
 .card__content {
-  padding: 1.75em;
+  padding: 1.55em;
   display: grid;
-  gap: 0.75rem;
+  gap: 1rem;
+  max-width: 90%;
+  margin-inline: auto;
 }
 
 .card__heading {
   color: var(--clr-dark-blue);
+  font-weight: 800;
 }
 
 .plan-box {
   justify-content: space-between;
 
-  margin-block: 1.75rem;
+  margin-block: 1.5rem;
 }
 
 .logo {
@@ -168,6 +165,10 @@ a:visited {
 
 .plan-link {
   font-weight: 600;
+}
+
+.plan-link:hover {
+  opacity: var(--opacity-hover);
 }
 
 .btn {
@@ -189,8 +190,27 @@ a:visited {
   font-weight: 700;
 }
 
+.payment:hover {
+  opacity: var(--opacity-hover);
+}
+
 .cancel {
   color: inherit;
   font-weight: 700;
   background: none;
+}
+
+.cancel:hover {
+  color: var(--clr-dark-blue);
+  font-weight: 700;
+}
+
+@media (max-width: 400px) {
+  .container {
+    background: url(images/pattern-background-mobile.svg) repeat-x;
+  }
+
+  .card__content {
+    max-width: 100%;
+  }
 }
