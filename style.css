@@ -205,7 +205,7 @@ a:visited {
   font-weight: 700;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 25em) {
   .container {
     background: url(images/pattern-background-mobile.svg) repeat-x;
   }
