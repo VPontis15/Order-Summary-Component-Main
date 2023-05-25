@@ -119,9 +119,9 @@ a:visited {
 }
 
 .card {
-  max-width: 380px;
+  max-width: 23.75rem;
   background-color: #fff;
-  border-radius: 20px;
+  border-radius: 1.25rem;
   overflow: hidden;
   margin: 1.5rem;
   box-shadow: 0 5px 15px;
@@ -129,7 +129,7 @@ a:visited {
 
 .img-container {
   background: url(images/illustration-hero.svg) no-repeat center center/ cover;
-  height: 170px;
+  height: 10.625rem;
   max-width: 100%;
 }
 
@@ -175,7 +175,7 @@ a:visited {
   border: none;
   outline: none;
   padding: 0.75em;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   cursor: pointer;
 }
 
